@@ -32,17 +32,6 @@ end
 
 end
 
-shortened_tweet_truncator(array)
-array.collect do |x|
-  puts word_substituter(x)
-end
-end 
-
-
-
-
-
-
 
 
 def bulk_tweet_shortener(array)
@@ -52,13 +41,27 @@ def bulk_tweet_shortener(array)
 end
 
 
-def selective_tweet_shortener(string)
-  if string.length > 140
-    word_substituter(string)
-  else
-    string
-  end
+selective_tweet_shortener(string)
+if string.index > 140
+  word_substituter(string)
+else 
+ string 
 end
+end
+
+shortened_tweet_truncator(string)
+
+if string.index > 140 
+  
+
+
+
+
+
+
+
+
+
 
 def shortened_tweet_truncator(string)
   if string.length > 140

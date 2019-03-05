@@ -32,31 +32,11 @@ end
 
 end
 
-shortened_tweet_truncator(string)
-array = string.split(" ")
-array.each do |key, value|
-  dictionary 
+shortened_tweet_truncator(array)
+array.collect do |x|
+  
+  
 
-
-
-
-
-
-
-
-
-
-def word_substituter(string)
-  arr = string.split(" ")
-  arr.each_with_index do |key, value|
-      dictionary.keys.each do |x|
-        if x == key
-          arr[value] = dictionary[x]
-      end
-    end
-  end
-  arr.join(" ")
-end
 
 
 

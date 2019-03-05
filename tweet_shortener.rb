@@ -34,8 +34,10 @@ end
 
 shortened_tweet_truncator(array)
 array.collect do |x|
-  
-  
+  puts word_substituter(x)
+end
+end 
+
 
 
 

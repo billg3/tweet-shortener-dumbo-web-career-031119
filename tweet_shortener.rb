@@ -16,7 +16,7 @@ def dictionary
     "and" => "&"
   }
 end
-
+end
 
 word_substituter(string)
 
@@ -32,6 +32,7 @@ end
 
 end
 
+end 
 
 
 def bulk_tweet_shortener(array)
@@ -39,6 +40,8 @@ def bulk_tweet_shortener(array)
     puts word_substituter(x)
   end
 end
+end 
+
 
 
 selective_tweet_shortener(string)
@@ -46,6 +49,7 @@ if string.index > 140
   word_substituter(string)
 else 
  string 
+end
 end
 end
 
@@ -58,7 +62,7 @@ else
   string
 end
 
-
+end
 
 
 

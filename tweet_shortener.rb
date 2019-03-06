@@ -57,10 +57,7 @@ string[0..136] + "..."
 else 
   string
 end
-end
 
-  
-end
 
 
 

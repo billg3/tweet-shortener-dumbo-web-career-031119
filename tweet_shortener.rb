@@ -17,45 +17,52 @@ def dictionary
   }
 end
 
-word_substituter(string)
-
-array = string.split(" ")
-array.each do |key, value|
-  dictionary.key.each do |x|
-    if x == key 
-      array[value] = dictionary [x]
-  end 
+wor
+ def word_substituter (string)
+  array = string.split(" ")
+  array.each_with_index do |words,index|
+    dictionary.keys.each do |x|
+      if x == words
+      array[index] = dictionary[x]
+      end
+      end
+      end
+array.join(" ")
 end
-  array.join(",")
-end
 
 
-
-def bulk_tweet_shortener(array)
-  array.collect do |x|
-    puts word_substituter(x)
+ def bulk_tweet_shortener (array)
+array.each_with_index do |tweet, index|
+  tweet_array = tweet.split(" ")
+  tweet_array.each_with_index do |word, index|
+    dictionary.keys.each do |x|
+      if x == word.downcase
+        tweet_array[index] = dictionary[x]
+      end
+    end
   end
+  tweet = tweet_array.join(" ")
+  puts tweet
+
+   end
 end
 
 
-
-selective_tweet_shortener(string)
-if string.index > 140
-  word_substituter(string)
-else 
- string 
+ def selective_tweet_shortener (tweet)
+if tweet.length > 140
+  word_substituter(tweet)
+else
+ tweet
 end
-
-shortened_tweet_truncator(string)
-
-if string.index > 140 
-string = word_substituter(string)
-string[0..136] + "..."
-else 
-  string
-end
-
 end
 
 
+ def shortened_tweet_truncator (tweet)
 
+   if tweet.length > 140
+   tweet =  word_substituter(tweet)
+   tweet[0..136] + "..."
+  else
+   tweet
+  end
+  end 

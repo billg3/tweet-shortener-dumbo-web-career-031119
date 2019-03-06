@@ -26,7 +26,6 @@ array.each do |key, value|
       array[value] = dictionary [x]
   end 
 end
-end
   array.join(",")
 end
 
@@ -45,7 +44,6 @@ if string.index > 140
   word_substituter(string)
 else 
  string 
-end
 end
 end
 

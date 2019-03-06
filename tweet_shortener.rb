@@ -16,7 +16,6 @@ def dictionary
     "and" => "&"
   }
 end
-end
 
 word_substituter(string)
 
@@ -29,10 +28,8 @@ array.each do |key, value|
 end
 end
   array.join(",")
-
 end
 
-end 
 
 
 def bulk_tweet_shortener(array)
@@ -40,7 +37,6 @@ def bulk_tweet_shortener(array)
     puts word_substituter(x)
   end
 end
-end 
 
 
 

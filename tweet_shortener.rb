@@ -52,8 +52,8 @@ end
 shortened_tweet_truncator(string)
 
 if string.index > 140 
-word_substituter(string)
-elsif
+string = word_substituter(string)
+string[0..136] = "..."
   
 
 

@@ -45,7 +45,6 @@ if string.index > 140
 else 
  string 
 end
-end
 
 shortened_tweet_truncator(string)
 

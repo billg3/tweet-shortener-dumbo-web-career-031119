@@ -53,22 +53,15 @@ shortened_tweet_truncator(string)
 
 if string.index > 140 
 string = word_substituter(string)
-string[0..136] = "..."
+string[0..136] + "..."
+else 
+  string
+end
+end
+
   
 
 
 
 
 
-
-
-
-
-def shortened_tweet_truncator(string)
-  if string.length > 140
-    string = word_substituter(string)
-    string[0..136] + "..."
-  else
-  string
-  end
-end
